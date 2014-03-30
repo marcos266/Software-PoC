@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <import resource="assembly://Alstom.Configuration/Alstom.Configuration/Persistence.xml"/>
+  
+  <object name="LoginBasicRepository" type="Alstom.Repository.BasicRepository&lt;Alstom.Model.Login>, Alstom.Repository">
+    <property name="SessionFactory" ref="SessionFactory"></property>
+    <property name="SchemaGeneration" ref="SchemaGeneration"></property>
+  </object>
+  <object name="LoginSessionBasicRepository" type="Alstom.Repository.BasicRepository&lt;Alstom.Model.LoginSession>, Alstom.Repository">
+    <property name="SessionFactory" ref="SessionFactory"></property>
+    <property name="SchemaGeneration" ref="SchemaGeneration"></property>
+  </object>
+
+</objects>
